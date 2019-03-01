@@ -1,0 +1,136 @@
+body {font-family:Open Sans, sans-serif;}
+h2 {font-size:38px; color:#484848;}
+h3 {font-size:36px; margin-bottom:0.1em;}
+.wrapper {display:flex;	flex-direction:column; width:100%; height:auto; align-items:center;}
+h4 {font-size:26px; color:#FFFFFF;}
+h5 {font-size:22px; text-align:center; margin:0; font-weight:normal; color:#888888;}
+
+/*** Navbar ***/
+nav {
+	position:fixed;
+	top:0;
+	width:100%;
+	height:auto;
+	font-weight:bold;
+	text-align:center;
+	background-color:#282828;
+	z-index:10000;
+}
+
+.bars {
+	display:inline-block;
+	width:40px;
+	height:40px;
+	margin:10px 0px 10px 10px;
+	border:none;
+	cursor:pointer;
+	text-align:center;
+	float:left;
+}
+		
+	.bar1, .bar2, .bar3 {
+		width:30px;
+		height:4px;
+		margin:6px 5px 0px;
+		transition:0.4s;
+		background-color:#FFFFFF;
+	}
+		
+	.change .bar1 {-webkit-transform:rotate(-45deg) translate(-9px,  6px); transform:rotate(-45deg) translate(-9px, 6px);}
+	.change .bar2 {opacity:0;}
+	.change .bar3 {-webkit-transform:rotate(45deg) translate(-8px, -6px); transform:rotate(45deg) translate(-8px, -6px);}
+	
+	a.navbar_actions {display:none;}
+	
+#dropdown_menu {
+	display:none;
+	width:500px;
+	height:auto;
+	position:fixed;
+	top:0;
+	left:0;
+	margin-top:60px;
+	border-top:1px Solid #FFFFFF;
+	color:#FFFFFF;
+	background-color:#282828;
+}
+		
+	ul.dd_menu {margin:0; max-width:100%; margin-left:-40px; list-style:none;}
+	li.dd_menu_list {display:block; padding:5px 0px 5px 15px; font-size:24px;}
+	li.dd_menu_list:hover {background-color:#484848;}	
+	li.dd_menu_list {-moz-transition:background-color .2s ease-in-out; -webkit-transition:background-color .2s ease-in-out; -ms-transition:background-color .2s ease-in-out; transition:background-color .2s ease-in-out;}
+		
+	a.menu {text-decoration:none; color:#FFFFFF;}
+		
+	.presentation {cursor:pointer;}
+		
+section#main {
+	display:flex;
+	flex-direction:column;
+	width:100%;
+	min-height:80vh;
+	justify-content:center;
+	align-items:center;
+	padding-top:70px;
+	box-shadow:1px 1px 12px #aaa inset;
+	background-color:#DBDBDB;
+}
+
+	#posts {
+		display:flex;
+		flex-direction:column;
+		width:75%;
+		height:auto;
+		margin:50px;
+		justify-content:center;
+		align-items:center;
+		box-shadow:1px 1px 12px #aaa;
+		background-color:#FFFFFF;
+	}
+		
+		.posts_header h4 {text-align:center; color:#666666;}
+		.posts_header {width:70%; border-bottom:1px solid #A5A5A5;}
+		
+		.posts_content {width:70%; text-align:center; padding:20px; box-sizing:border-box;}				
+		.posts_content:not(:last-child) {border-bottom:1px solid #A5A5A5;}
+		.posts_content p {font-size:16px; text-align:left;}
+		.posts_content a {color:#68ACD1;}
+		.posts_content a:hover {text-decoration:none;}
+		
+		a.small_btn, a.big_btn {text-decoration:none; color:#FFFFFF;}
+		a.big_btn {font-size:26px; font-weight:bold;}
+		
+		.small_btn {display:inline-flex; width:200px; height:35px; justify-content:center; align-items:center; margin-top:15px; margin-bottom:50px; border-radius:10px; box-shadow:1px 1px 12px #AAAAAA; background-color:#2A92B2;}
+		.small_btn:hover {background-color:#5F99AD;}
+		.small_btn {-moz-transition:background-color .2s ease-in-out; -webkit-transition:background-color .2s ease-in-out; -ms-transition:background-color .2s ease-in-out;	transition:background-color .2s ease-in-out;}
+		
+		h4.post_title {margin-bottom:0.1em;}
+		p.post_date {text-align:center; font-size:14px; margin-top:0.1em; color:#696969;}
+		
+/*** Footer ***/
+footer {color:#FFFFFF; background-color:#383838;}
+footer p {font-size:12px;}
+
+	ul.copyright {
+		display:inline-flex;
+		width:415px;
+		height:auto;
+		list-style:none;
+		padding:0;
+		margin-top:25px;
+		margin-bottom:25px;
+		justify-content:space-between;
+		font-size:16px;
+		color:#515151;
+	}
+		
+		li.copyright_list:not(:last-child) {padding-right:15px; border-right:2px Solid #696969;}
+		a.copyright_info {text-decoration:none; font-size:16px;	color:#515151;}		
+		a.copyright_info:hover {text-decoration:underline; color:#68ACD1;}
+		
+		a.copyright_info {
+			-moz-transition:color .2s ease-in-out;
+			-webkit-transition:color .2s ease-in-out;
+			-ms-transition:color .2s ease-in-out;
+			transition:color .2s ease-in-out;
+		}
